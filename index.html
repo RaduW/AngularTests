@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="angularTests">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular Test</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <script src="bower_components/jquery/dist/jquery.js" ></script>
+    <script src="bower_components/angular/angular.js" ></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js" ></script>
+
+    <!-- todo RaduW must fix somehow the path generation from the file watcher.. remove typescript from the path-->
+    <script src="js/main.js"></script>
+    <script src="js/mainPageController.js"></script>
+
+</head>
+
+
+
+</head>
+<body ng-controller="mainPageController">
+<h1>The title is:{{title}}</h1>
+<div ui-view></div>
+</body>
+</html>
