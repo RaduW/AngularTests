@@ -11,7 +11,7 @@
 
     <!-- todo RaduW must fix somehow the path generation from the file watcher.. remove typescript from the path-->
     <script src="js/main.js"></script>
-    <script src="js/mainPageController.js"></script>
+    <script src="js/controllers.js"></script>
 
 </head>
 
@@ -20,6 +20,27 @@
 </head>
 <body ng-controller="mainPageController">
 <h1>The title is:{{title}}</h1>
-<div ui-view></div>
+<div ui-view="viewA"></div>
+<div ui-view="viewParallel"></div>
+<div>
+    <h3>Navigate by url</h3>
+    <a href="#/state1">Navigate to state 1</a>
+    <a href="#/state2">Navigate to  state 2</a>
+    <a href="#/state2/sub1">Navigate to  state 2 sub 1 </a>
+</div>
+
+<div>
+    <h3>Navigate by url state</h3>
+    <a ui-sref="state1">Navigate to state 1</a>
+    <a ui-sref="state2">Navigate to  state 2</a>
+    <a ui-sref="state2.sub1">Navigate to  state 2 sub 1 </a>
+    <a ui-sref="state3">Navigate to  state 3</a>
+</div>
+<div>
+    <h3>Go to state</h3>
+    <a ng-click="navigate('state1')">Navigate to state 1</a>
+    <a ng-click="navigate('state2')">Navigate to  state 2</a>
+    <a ng-click="navigate('state2.sub1')">Navigate to  state 2 sub 1 </a>
+</div>
 </body>
 </html>

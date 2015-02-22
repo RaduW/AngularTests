@@ -1,0 +1,29 @@
+@scrollbarHeight: 30px;
+
+.scrollbar {
+  width: 400px;
+  height: @scrollbarHeight;
+  background-color: lightgray;
+  position:relative;
+  //border: thin green solid;
+}
+
+.bar{
+  with: 0px;
+  height: @scrollbarHeight;
+  border: thin solid;
+  position:absolute;
+}
+
+.warning {
+  .bar;
+  border-color: yellow;
+  //left:100px;
+}
+
+.error{
+  .bar;
+  border-color: red;
+  //left: 200px;
+}
+
