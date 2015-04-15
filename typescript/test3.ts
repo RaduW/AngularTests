@@ -1,1 +1,0 @@
-function test3(){return 1;}
