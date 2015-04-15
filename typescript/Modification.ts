@@ -32,7 +32,6 @@ class Modification{
         return this.isOn;
     }
 
-
 }
 
 function test(mod: Modification)
