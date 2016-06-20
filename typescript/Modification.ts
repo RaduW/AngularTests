@@ -39,7 +39,7 @@ function test(mod: Modification)
 }
 
 class Change{
-    show(parent : Modfication)
+    show(parent : Modification)
     {
 
     }

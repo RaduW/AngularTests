@@ -1,0 +1,30 @@
+.north, .east,.center,.west,.south {
+  background-color:#eee;
+  font-size:xx-large;
+}
+
+.east{
+  background-color:#ddb;
+}
+.west{
+  background-color:#dbd;
+}
+
+.firstTab{
+  background-color:#ffffb3;
+}
+.absolute-full{
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  position:absolute;
+}
+
+.relative-full{
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  position:relative;
+}

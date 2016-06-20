@@ -3,5 +3,6 @@
   <component name="TypeScriptCompiler">
     <option name="isCompilerEnabled" value="true" />
     <option name="typeScriptCompilerParams" value="--target ES5 -out js//.js" />
+    <option name="useConfig" value="true" />
   </component>
 </project>

@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.css"/>
+    <link rel="stylesheet" type="text/css" href="css/contentScrolling.css"/>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="js/contentScrollingTabDialog.js"></script>
+    <title>Content Scrolling</title>
+</head>
+<body ng-cloak ng-app="app">
+<div ng-controller='AppCtrl'>
+    <md-button class="md-primary md-raised" ng-click="showTabDialog($event)">
+        Tab Dialog
+    </md-button>
+</div>
+<script type="text/ng-template" id="tabDialog.tmpl.html">
+    <md-dialog aria-label="test dialog" flex="100" layout="column" layout-fill>
+        <md-dialog-content flex layout="column">
+            <md-tabs flex class="md-accent">
+                <md-tab id="tab2" layout-fill>
+                    <md-tab-label>Item Two</md-tab-label>
+                    <md-tab-body>
+                        <div layout="row">
+                            <md-content class='west' flex layout-fill>
+                                WEST </br>
+
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                                a line</br> a line</br> a line</br> a line</br> a line</br> a line</br> a line</br>
+                            </md-content>
+                            <md-content class='east' flex>
+                                EAST
+                                012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+                            </md-content>
+                        </div>
+                    </md-tab-body>
+                </md-tab>
+                <md-tab id="tab1">
+                    <md-tab-label>Item One</md-tab-label>
+                    <md-tab-body>
+                        <div class='firstTab'>
+                            <h1>This is Tab 1</h1>
+                            <p>Tab 1 content here</p>
+                            <p>second line</p>
+                            <p>third line</p>
+                        </div>
+                    </md-tab-body>
+                </md-tab>
+            </md-tabs>
+        </md-dialog-content>
+        <md-dialog-actions layout="row">
+            <md-button ng-click="answer('here goes the info')">
+                OK
+            </md-button>
+            <md-button ng-click="cancel()" style="margin-right:20px;">
+                cancel
+            </md-button>
+        </md-dialog-actions>
+    </md-dialog>
+</script>
+</body>
+</html>
